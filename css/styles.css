@@ -733,7 +733,7 @@ color: var(--address-link-cl);
 
 .gallery-item .link {
     display: block;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .gallery-item .link:hover,
@@ -763,12 +763,15 @@ color: var(--address-link-cl);
 
 .card-img {
     position: relative;
+    overflow: hidden
 }
 
 .overlay-text {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
 
     padding: 63px 24px;
 
