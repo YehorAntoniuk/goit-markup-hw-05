@@ -725,6 +725,7 @@ color: var(--address-link-cl);
     }
 
 .gallery-card {
+    position: relative;
     padding: 20px 24px;
     border: 1px solid #eeeeee;
     border-top: 0;
@@ -732,6 +733,7 @@ color: var(--address-link-cl);
 
 .gallery-item .link {
     display: block;
+    overflow: hidden;
 }
 
 .gallery-item .link:hover,
@@ -757,6 +759,35 @@ color: var(--address-link-cl);
     letter-spacing: 0.03em;
     
     color: var(--main-txt-cl);
+}
+
+.card-img {
+    position: relative;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    padding: 63px 24px;
+
+    font-size: 18px;
+    line-height: 1.56;
+    
+    letter-spacing: 0.03em;
+    
+    color: var(--wigte-cl);
+    background-color: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform var(--anim);
+}
+
+.gallery-item .link:hover .overlay-text,
+.gallery-item .link:focus .overlay-text  {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .main-logo {
