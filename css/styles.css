@@ -553,8 +553,9 @@ ul {
     height: 92px;
     border-radius: 4px;
     border: 1px solid var(--icon-cl);
+
     color: var(--icon-cl);
-    transition: color var(--anim);
+    transition: color var(--anim), border-color var(--anim);
 }
 
 .clients-icon {
@@ -725,7 +726,6 @@ color: var(--address-link-cl);
     }
 
 .gallery-card {
-    position: relative;
     padding: 20px 24px;
     border: 1px solid #eeeeee;
     border-top: 0;
@@ -733,7 +733,7 @@ color: var(--address-link-cl);
 
 .gallery-item .link {
     display: block;
-    /* overflow: hidden; */
+    transition: box-shadow var(--anim);
 }
 
 .gallery-item .link:hover,
@@ -763,7 +763,7 @@ color: var(--address-link-cl);
 
 .card-img {
     position: relative;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .overlay-text {
@@ -782,7 +782,7 @@ color: var(--address-link-cl);
     
     color: var(--wigte-cl);
     background-color: rgba(33, 150, 243, 0.9);
-    opacity: 0;
+
     transform: translateY(100%);
     transition: transform var(--anim);
 }
